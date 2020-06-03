@@ -1,5 +1,22 @@
-theme: jekyll-theme-architect
----
-layout: post
-title: Blogging Like a Hacker
----
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+#relative_permalinks: true
+# Setup
+title:               Martin Kwok 
+tagline:             'Particle physicist / data scientist '
+description:         ''
+#url:                 http://lanyon.getpoole.com
+baseurl:             ''
+#plugins: [jekyll-paginate]
+#paginate:            5
+
+# About/contact
+#author:
+#  name:              Mark Otto
+#  url:               https://twitter.com/mdo
+#  email:             markdotto@gmail.com
+#
+## Custom vars
+#version:             1.0.0
