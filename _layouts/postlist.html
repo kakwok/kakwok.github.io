@@ -1,0 +1,16 @@
+---
+layout: default  
+---
+
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {{ content }}
+</div>
+{% for post in site.posts | sort:"date" %}
+<h3>
+ <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+  <small>{{ post.date | date_to_string }}</small>
+  </a>
+</h3>
+{% endfor %}
