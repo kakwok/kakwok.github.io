@@ -9,6 +9,12 @@ tagline:             'Particle physicist / data scientist '
 description:         ''
 #url:                 http://lanyon.getpoole.com
 baseurl:             ''
+
+kramdown:
+  # do not replace newlines by <br>s
+  hard_wrap: false
+  # parse markdown inside block-level HTML tag
+  parse_block_html: true
 #plugins: [jekyll-paginate]
 #paginate:            5
 
