@@ -17,6 +17,6 @@ title: Publications
 ### Searching for new Physics with Exotic signatures 
 
 
-* [Black holes and Sphalerons$](http://arxiv.org/abs/1805.06013)  CMS Collaboration. Search for black holes and sphalerons in high-multiplicity final states in proton-proton collisions at $\sqrt{s}= 13$ TeV.  *JHEP*, 11:042, 2018.
+* [Black holes and Sphalerons](http://arxiv.org/abs/1805.06013)  CMS Collaboration. Search for black holes and sphalerons in high-multiplicity final states in proton-proton collisions at $\sqrt{s}= 13$ TeV.  *JHEP*, 11:042, 2018.
  
 * [Black holes with early LHC Run 2 data$](http://arxiv.org/abs/1705.01403)  CMS Collaboration. Search for black holes and other new phenomena in high-multiplicity final states in proton-proton collisions at $\sqrt{s}= 13$ TeV.  *Phys. Lett., B*, 774:279-307, 2017.

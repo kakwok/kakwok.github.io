@@ -4,10 +4,10 @@
 permalink:           pretty
 #relative_permalinks: true
 # Setup
-title:               Martin Kwok 
+title:               'Martin Kwok'
 tagline:             'Particle physicist / data scientist '
 description:         ''
-#url:                 http://lanyon.getpoole.com
+url:                 'https://kakwok.github.io/'
 baseurl:             ''
 
 kramdown:
