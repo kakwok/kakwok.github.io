@@ -5,13 +5,15 @@ title: Home
 
 <div class="row">
   <div class="col-sm-8">
+<div style="text-align:justify"> 
 Hi, I am Martin Kwok. I am a Physics Ph.D. student at [Brown University](https://www.brown.edu/academics/physics/), 
 expecting to graduate in August 2020. 
 
-I search for most fundamental particles in the largest scientific experiment with machine learning. 
+I search for the most fundamental particles in the largest scientific experiment with machine learning. 
 
 Learn about me [here]({% link about.md %})  
 
+</div>
 <hr style="width:75%">
 
 <!--

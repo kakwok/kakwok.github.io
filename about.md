@@ -5,7 +5,8 @@ title: About Me
 
 <div class="row">
   <div class="col-sm-8">
- 
+
+<div style="text-align:justify"> 
 Hi, I am Martin Kwok. I am a Physics Ph.D. student at [Brown University](https://www.brown.edu/academics/physics/), 
 expecting to graduate in August 2020.  
  
@@ -26,7 +27,7 @@ A non-technical introduction can be found in this [Physics briefing](https://cms
 Contact me at martin.kwok(at)brown.edu 
 
 Here's my github page: [GitHub](https://github.com/kakwok)
-
+ </div> 
 ### Hobbies
  
 Outside of Physics, I enjoy sports in general, in particular, badminton and bouldering.
