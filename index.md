@@ -6,10 +6,9 @@ title: Home
 <div class="row">
   <div class="col-sm-8">
 <div style="text-align:justify"> 
-Hi, I am Martin Kwok. I am a Physics Ph.D. student at [Brown University](https://www.brown.edu/academics/physics/), 
-expecting to graduate in August 2020. 
+I am Martin Kwok. I am a research associate at [Fermilab](https://cms.fnal.gov/), working on the [CMS experiment](https://cms.cern/).
 
-I search for the most fundamental particles in the largest scientific experiment with machine learning. 
+I search for the most fundamental particles in the largest scientific experiment. 
 
 Learn about me [here]({% link about.md %})  
 
@@ -35,7 +34,7 @@ Learn about me [here]({% link about.md %})
 -->
 </div>
   <div class="col-sm-4">
-  <img align='right' width='200' height='200' src="/assets/images/propic.jpg">
+  <img align='right' src="/assets/images/propic.jpg">
   </div>
 </div>
 
