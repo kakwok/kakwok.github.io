@@ -1,0 +1,19 @@
+name: Martin K. H. Kwok
+
+# --- KNOWN BUG fix (see CLAUDE.md) ---
+# Title, affiliation and address are NOT stored here. The header derives them from the
+# first entry of experience.yml (type: work). The old CV hardcoded "Research Associate,
+# Fermilab" here and drifted out of sync with Work Experience. Do not reintroduce those
+# keys — build.py reads experience.yml[0].{position, institution, location, address}.
+
+email: kkwok@fnal.gov            # VERIFY: current UNL work address. kkwok@fnal.gov is stale.
+phone: null            # PRIVATE. Leave null unless a variant needs it; never publish.
+
+links:
+  orcid: https://orcid.org/0000-0002-8693-6146
+  inspire_author: https://inspirehep.net/authors/1380817   # confirmed: ORCID on profile matches
+  inspire_bai: Ka.Hei.Martin.Kwok.1                        # confirmed; used by `inspire.py stats`
+  github: https://github.com/kakwok
+  website: https://kakwok.github.io
+  scholar: https://scholar.google.com/citations?user=jxoBDAIAAAAJ&hl=en&authuser=1        # VERIFY
+  linkedin: null       # VERIFY

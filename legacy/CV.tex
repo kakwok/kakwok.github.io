@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+%\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{cite}
+\usepackage{longtable}
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage[colorlinks=true]{hyperref}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+
+
+% hanging publications: 1st line starts at beginning of line, 
+% further lines are placed a bit to the right
+\usepackage{hanging}
+\newcommand\publication[1]{%
+	\smallskip\par\hangpara{1.5em}{1}\bibentry{#1}\smallskip
+}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=0.75in, right=0.75in, bottom=.75in, top=0.75in]{geometry}
+
+%Skype information - include your Skype name for a link to add you on Skype
+\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}} 
+\newcommand{\Absender}[1][\normalsize]{\Skype} 
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    % pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\linespread{1.1}
+\nobibliography{main}
+\bibliographystyle{unsrt}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+
+\noindent  \LARGE{\textbf{Martin K. H. Kwok}}  \\
+% \vspace{-2ex}
+%\hline 
+\normalsize
+
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+% Your email address, website, and Skype name are links to send email, open your website and add you on Skype. 
+
+\begin{center}
+\begin{tabular}{l l}
+Research Associate       & \hspace{1in}\href{mailto:kkwok@fnal.gov}{kkwok@fnal.gov}\\
+Fermi National Accelerator Laboratory       \\
+MS 205, PO Box 500, Batavia, IL 60510-5011    &  \\
+\end{tabular}
+\end{center}
+%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resizebox{\textwidth}{!}{
+% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
+\noindent 
+\begin{tabular}{p{0.12\linewidth}  p{0.88\linewidth}}
+
+\multicolumn{2}{l}{ \Large{Work Experience} } \\ \hline
+     2025 - Now &  Research Assistant Professor, University of Nebraska-Lincoln, NE. \\
+     2020 - 2025 & Research Associate, Fermilab, Batavia, IL. \\
+     & \\
+\multicolumn{2}{l}{ \Large{Education} }   \\ \hline
+     2014 - 2020 & Ph. D. Physics, Brown University, Providence, R.I. \\
+      	     % & Thesis topic:  Inclusive Search for a Lorentz-Boosted Higgs Boson Decaying into Bottom Quarks \\
+             & Advisor: Prof. Greg Landsberg \\
+     2012 - 2014      & M. Phil. Physics, Chinese University of Hong Kong (CUHK), Hong Kong \\
+      	%& Thesis topic:   Sensitivity study of the Higgs decay channel $WH\rightarrow lv b\bar{b}$  using the \\
+            %  & ATLAS detector in LHC Run II and  Study of surface cosmic rays \\
+            % & Advisor: Prof. M. C. Chu \\
+     2009 - 2012 &B.S. Physics, Chinese University of Hong Kong (CUHK), Hong Kong\\
+     & \\
+\multicolumn{2}{l}{ \Large{Professional Experience} }   \\ \hline
+ % 2024        & CMS EXO Methods Forum convenor\\
+ % 2024        & Seminar Series \href{https://lpc.fnal.gov/programs/topic/about.shtml}{(Topic of the Week)} coordinator\\
+ 2023 - 2024 & LHC Physics center \href{https://lpc.fnal.gov/fellows/2024/Martin_Kwok.shtml}{Distinguished Researcher}\\
+ 2023        & Collaborator at \href{https://tac-hep.org/}{TAC-HEP} \\
+ % 2023        & Participant at \href{https://codas-hep.org/pages/participants-2023.html}{CoDAS-HEP 2023} \\
+ % 2021        & Participant at ALCF GPU Hackathon 2021 \\
+ 2020 - Now  & Member of \href{https://www.anl.gov/hep-cce}{Center of Computational Excellence (CCE)}\\
+             & Portable Parallelization Strategy(PPS) team  \\
+ 2019 - 2020 & LHC Physics Center (LPC) \href{https://lpc.fnal.gov/programs/graduate-scholars/2019/Ka_Hei_Martin_Kwok.shtml}{Graduate Scholar} \\
+ 2016 - 2018 & CMS HCAL on-call DAQ expert, online software developer\\
+ 		 % & CMS HCAL online software developer\\ 
+
+&\\
+\multicolumn{2}{l}{ \Large{Research highlights} }   \\ \hline
+% &\\
+\multicolumn{2}{l}{  \underline{Physics:}  }   \\ 
+2020 - Now   & Long-lived Particle (LLP) searches with Muon Detector Showers~(MDS):
+            \begin{itemize}[nosep]
+                \item Coordinating multiple LLP search efforts using the novel LLP signature MDS
+                \item Set the best limits for low-mass, long-lived Heavy Neutral Lepton (HNL) using muon detector showers. Published in \href{https://doi.org/10.1103/PhysRevD.110.012004}{PRD}.
+            \end{itemize} \vspace*{-10pt}\\
+2019 - 2020  & Boosted Higgs decaying into bottom quarks: 
+            \begin{itemize}[nosep]
+                \item Performed the inclusive search for Higgs decaying into bottom quarks utilizing boosted jet substructure and machine learning techniques. Published in \href{https://link.springer.com/article/10.1007/JHEP12(2020)085}{JHEP}.
+            \end{itemize} \vspace*{-10pt}\\
+2016 - 2018  & Searches for microscopic Black holes and Sphalerons:
+            \begin{itemize}[nosep]
+                \item{Performed the first dedicated experimental search for electroweak sphalerons with CMS data. Published in \href{https://link.springer.com/article/10.1007/JHEP11(2018)042}{JHEP}.}
+            \end{itemize} \vspace*{-10pt}\\                  
+\multicolumn{2}{l}{ \underline{Detector work:}  }   \\ 
+2022 - Now   & New CMS triggers for LLPs using Muon Detector Showers:
+            \begin{itemize}[nosep]
+                \item Developed and commissioned dedicated hardware \href{https://cds.cern.ch/record/2842376?ln=en}{triggers} using muon detector showers for drastically improving acceptance of CMS to signatures of LLPs for LHC Run 3.
+            \end{itemize} \vspace*{-10pt}\\       
+2019 - 2020 & Fast Machine learning with ASIC:
+            \begin{itemize}[nosep]
+            \item{Designed a \href{https://arxiv.org/abs/2105.01683}{quantized autoencoder network} to compress HGCAL front-end electronic data that is capable of performing ultra-low latency inference}
+            \end{itemize} \vspace*{-15pt}\\              
+2016 - 2018  & HCAL online software developer:
+            \begin{itemize}[nosep]
+              \item{Developed critical features for HCAL Run Control software to allow concurrent commissioning of detector partitions during HCAL phase-1 upgrade.}
+              \item{Developed monitoring tools for debugging HCAL phase-1 front-end communication issue.} 
+            \end{itemize}  \vspace*{-10pt} 
+% &\\
+
+\end{tabular}
+}
+
+\resizebox{\textwidth}{!}{
+\noindent 
+\begin{tabular}{p{0.12\linewidth}  p{0.88\linewidth}}
+\multicolumn{2}{l}{ \underline{Computing work:}  }   \\
+2021 - Now & GPU portability studies:
+            \begin{itemize}[nosep]
+            \item{Migrated $\sim$4k lines of \href{https://github.com/cms-sw/cmssw/pull/44910/}{CUDA code} for CMS HCAL energy reconstruction using the GPU portability library, Alpaka}
+            \item{Designed and implemented a bench-marking track reconstruction \href{https://github.com/kakwok/p2r-tests/}{mini-app} with various GPU portability technologies such as \href{https://github.com/kokkos/kokkos}{Kokkos} and \href{https://github.com/alpaka-group/alpaka}{Alpaka}}
+            % \item{Profiled and executed GPU bench-marking code on NVIDIA, AMD and Intel GPUs on the \href{https://www.jlse.anl.gov/}{JLSE} system. Submitted to \href{https://arxiv.org/pdf/2409.09228}{arxiv}.}
+            % \item{Defined and evaluated a set of \href{https://hep-cce.github.io/Metric.html}{metric} for different GPU portability solutions}
+            % \item{Migrated a CUDA track reconstruction algorithm to using unified memory and measured it's performance on \href{https://docs-dev.nersc.gov/cgpu/}{Cori GPU system} at \href{https://www.nersc.gov/}{NERSC} }
+            \end{itemize} 
+            \vspace*{-20pt}\\
+& \\            
+\multicolumn{2}{l}{ \Large{Awards} }   \\ \hline
+    2020 & Forrest Award for Excellent Work Related to Experimental Apparatus, Brown U. \\
+    2015 & Award of Excellence as a Graduate Teaching Assistant, Brown U. \\
+    % 2013 & Best Teaching Assistant Award, CUHK \\
+& \\
+\multicolumn{2}{l}{ \Large{Teaching and outreach} }   \\ \hline
+ 2024 & Local organizer for APS Conference for Undergraduate Woman and Gender Minorities in Physics(CU*iP), Fermilab\\
+ 2024 & Lead facilitator of a new long exercise on Muon Detector Shower, CMSDAS, Fermilab    \\
+      & Students won the best presentation award\\
+ 2023 - 2024 & Mentor for US-CMS Mentorship program \\
+ 2023 & Instructor at Training to Advance Computational High Energy Physics in the Exascale Era (\href{https://tac-hep.org/}{TAC-HEP})\\
+ 2023 - 2024 & Local facilitator for LPC Hands-on Tutorials (Jets/Trigger)\\
+ 2020 - 2023 & Local facilitator on Jets and TTGamma exercise, CMSDAS, Fermilab    \\
+ 2023 & Overseas mentor of Chung Chi College Mentor Program \\ 
+ 2019 & Member of local organizing committee, Saturday Morning Physics  \\
+&\\
+
+\multicolumn{2}{l}{ \Large{Selected talks on Physics} }   \\ \hline
+2024 July& \href{https://indico.cern.ch/event/1291157/timetable/?view=standard#188-searches-for-heavy-neutral}{ICHEP2024(Prague)}  Searches for Heavy Neutral Leptons in CMS\\
+2024 July& \href{https://indico.cern.ch/event/1381368/timetable/?view=standard#59-cms-hnls-in-the-muon-system}{LLP2024(Tokyo)} CMS: HNLs in the muon system \\
+2023 Sep & \href{https://agenda.irmp.ucl.ac.be/event/4999/}{Seminar at UC Louvain(BE)} Searching for Heavy Neutral Leptons with muon detectors in the CMS experiment \\
+2023 May & \href{https://indico.cern.ch/event/1198609/contributions/5316842/}{LHCP 2023 Plenary}  Non-resonant searches at TeV scale \\
+2022 Nov & \href{https://nssmic.ieee.org/2022/information/#conference-poster}{IEEE NSS MIC RTSD}  Triggering on Hadronic Showers produced in decays of long-lived particles in CMS Muon Detectors\\
+2022 Oct & \href{https://indico.cern.ch/event/1166678/timetable/?view=standard#38-whats-new-for-run-3-for-llp}{LLP 12}  What's new for Run 3 for LLPs at CMS?\\
+2020 July         & \href{https://indico.cern.ch/event/775951/contributions/3946570/}{BOOST 2020}  Search for Boosted Higgs bosons decaying into bottom quark pairs in CMS\\
+% 2019 Dec         & LPC Physics Forum: Search for new physics with boosted Higgs boson\\
+2019 Aug         & \href{https://indico.fnal.gov/event/19380/timetable/?view=standard#121-vhbb-and-search-for-booste}  {QCD at LHC} VH(bb) and search for boosted ggH$\to$bb in CMS \\
+
+&\\
+\multicolumn{2}{l}{ \Large{Selected publication on physics} }   \\ \hline
+2025 Jan & Charles Bell et al, MAIA: A new detector concept for a 10 TeV muon collider, \href{https://arxiv.org/abs/2502.00181}{arxiv:2502.00181}\\
+2024 July & CMS Collaboration, Search for long-lived heavy neutral leptons decaying in the CMS muon detectors in proton-proton collisions at  $\sqrt{s}$ = 13 TeV, \href{https://doi.org/10.1103/PhysRevD.110.012004}{Phys. Rev. D 110 (2024) 012004}\\
+2024 May & Review of searches for vector-like quarks, vector-like leptons, and heavy neutral leptons in proton-proton collisions at $\sqrt{s}$ = 13 TeV at the CMS experiment, accepted by \href{https://arxiv.org/abs/2405.17605}{Physics Reports}.\\
+2021 May & G. D. Guglielmo et al., A reconfigurable neural network ASIC for detector front-end data compression at the HL-LHC, \href{https://ieeexplore.ieee.org/document/9447722}{IEEE Trans. Nucl. Sci. 68, 2179 (2021)}\\
+2019 Apr & CMS Collaboration, Inclusive search for a highly boosted Higgs boson decaying to a bottom quark-antiquark pair, \href{https://link.springer.com/article/10.1007/JHEP12(2020)085}{JHEP 12 (2020) 085} \\
+2018 Oct & CMS Collaboration, Search for low-mass resonances decaying into bottom quark-antiquark pairs in proton-proton collisions at $\sqrt{s}$ = 13 TeV,  \href{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.99.012005}{Phys. Rev. D 99, 012005 (2019)}\\
+2018 May & CMS Collaboration, Search for black holes and sphalerons in high-multiplicity final states in proton-proton collisions at $\sqrt{s}$ = 13 TeV,  \href{https://link.springer.com/article/10.1007/JHEP11(2018)042}{JHEP 11 (2018) 042}\\
+
+\end{tabular}
+}
+
+\resizebox{\textwidth}{!}{
+\noindent 
+\begin{tabular}{p{0.12\linewidth}  p{0.88\linewidth}}
+
+&\\
+2017 May & CMS Collaboration, Search for black holes and other new phenomena in high-multiplicity final states in proton-proton collisions at $\sqrt{s}$ = 13 TeV, \href{https://www.sciencedirect.com/science/article/pii/S0370269317307657}{Phys. Lett. B 774 (2017) 279}
+\vspace{12}
+\\
+
+\multicolumn{2}{l}{ \Large{Selected talks on Computing} }   \\ \hline
+2023 May & \href{https://indico.jlab.org/event/459/contributions/11844/}{CHEP 2023} Application of performance portability solutions for GPUs and many-core CPUs to track reconstruction kernels \\
+2023 Feb & \href{https://tac-hep.org/assets/pdf/uw-gpu-fpga/intro_CUDA_profiling-2.pdf}{TAC-HEP lectures} Introduction to Nvidia profiling tools : Nsight system and Nsight compute\\
+2022 Oct & \href{https://indico.cern.ch/event/1106990/contributions/4991278/}{ACAT 22} Application of Portable Parallelization Strategies for GPUs on track reconstruction kernels \\
+2021 Aug & \href{https://indico.cern.ch/event/1063482/#3-portable-parallelization-str}{IRIS-HEP topical meeting} Portable Parallelization Strategies - Metrics\\
+2021 May & \href{https://indico.cern.ch/event/948465/contributions/4324112/}{vCHEP 21} Performance of CUDA Unified Memory in CMS Heterogeneous Pixel Reconstruction\\
+
+&\\
+\multicolumn{2}{l}{ \Large{Selected publication on Computing} }   \\ \hline
+2024 Sep & H. Ather et al., Exploring code portability solutions for HEP
+with a particle tracking test code, \href{https://arxiv.org/abs/2409.09228}{arxiv:2409.09228}\\
+2023 June   & M. Atif et al., Evaluating Portable Parallelization Strategies for Heterogeneous Architectures in High Energy Physics, \href{https://arxiv.org/abs/2306.15869}{arxiv:2306.15869}\\
+2022 Mar & M. Bhattacharya et al., Portability: A Necessary Approach for Future Scientific Software \href{https://arxiv.org/pdf/2203.09945}{arxiv:2203.09945}\\
+2021 Aug & M. Kortelainen et al., Performance of CUDA Unified Memory in CMS Heterogeneous Pixel Reconstruction, \href{https://www.epj-conferences.org/articles/epjconf/abs/2021/05/epjconf_chep2021_03035/epjconf_chep2021_03035.html}{EPJ Web Conf., 251:03035, 2021}\\ 
+
+\end{tabular}
+}
+
+
+% \resizebox{\textwidth}{!}{
+% \noindent 
+% \begin{tabular}{p{0.12\linewidth}  p{0.88\linewidth}}
+% % \multicolumn{2}{l}{ \Large{Selected Publications} }   \\ \hline
+% \end{tabular}
+% }
+\end{document}
+
+

@@ -1,0 +1,60 @@
+- start: 2024
+  end: 2024
+  kind: outreach
+  title: >-
+    Local organizer, APS Conference for Undergraduate Women and Gender Minorities in
+    Physics (CU*iP)
+  institution: Fermilab
+  tags: [outreach, leadership]
+
+- start: 2024
+  end: 2024
+  kind: teaching
+  title: >-
+    Lead facilitator for a new long exercise on Muon Detector Showers, CMSDAS
+  institution: Fermilab
+  note: Students won the best presentation award
+  tags: [hep, llp, outreach]
+
+- start: 2023
+  end: 2024
+  kind: mentoring
+  title: Mentor, US-CMS Mentorship Program
+  tags: [outreach, leadership]
+
+- start: 2023
+  end: 2023
+  kind: teaching
+  title: >-
+    Instructor, Training to Advance Computational High Energy Physics in the Exascale
+    Era (TAC-HEP)
+  url: https://tac-hep.org/
+  tags: [computing, gpu, outreach]
+
+- start: 2023
+  end: 2024
+  kind: teaching
+  title: Local facilitator, LPC Hands-on Tutorials (Jets / Trigger)
+  institution: Fermilab
+  tags: [hep, outreach]
+
+- start: 2020
+  end: 2023
+  kind: teaching
+  title: Local facilitator, Jets and TTGamma exercises, CMSDAS
+  institution: Fermilab
+  tags: [hep, outreach]
+
+- start: 2023
+  end: 2023
+  kind: mentoring
+  title: Overseas mentor, Chung Chi College Mentor Program
+  institution: Chinese University of Hong Kong (CUHK)
+  tags: [outreach]
+
+- start: 2019
+  end: 2019
+  kind: outreach
+  title: Member of local organizing committee, Saturday Morning Physics
+  institution: Fermilab
+  tags: [outreach]

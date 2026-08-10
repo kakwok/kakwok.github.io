@@ -1,0 +1,27 @@
+- start: 2014
+  end: 2020
+  degree: Ph.D. Physics
+  institution: Brown University
+  location: Providence, RI
+  advisor: Prof. Greg Landsberg
+  thesis: >-
+    Inclusive Search for a Lorentz-Boosted Higgs Boson Decaying into Bottom Quarks
+  tags: [hep]
+
+- start: 2012
+  end: 2014
+  degree: M.Phil. Physics
+  institution: Chinese University of Hong Kong (CUHK)
+  location: Hong Kong
+  advisor: Prof. M. C. Chu
+  thesis: >-
+    Sensitivity study of the Higgs decay channel $WH \to \ell\nu b\bar{b}$ using the
+    ATLAS detector in LHC Run II, and study of surface cosmic rays
+  tags: [hep]
+
+- start: 2009
+  end: 2012
+  degree: B.S. Physics
+  institution: Chinese University of Hong Kong (CUHK)
+  location: Hong Kong
+  tags: [hep]

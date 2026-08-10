@@ -1,0 +1,42 @@
+# ---------------------------------------------------------------------------
+# THIS REPO IS PUBLIC. Git history is permanent — a later commit cannot scrub a
+# leak. Everything below is here to keep something out of that history forever.
+# ---------------------------------------------------------------------------
+
+# Employer-specific CV variants. Committing one publishes that you applied
+# somewhere, and when. Name variants by FLAVOR (academic, industry-ml), never by
+# target. Anything targeted stays local and matches one of these patterns.
+variants/*-application.yml
+variants/private-*.yml
+variants/local-*.yml
+*-application.pdf
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# CV build output — PDFs are artifacts, rebuilt by CI. Only the published
+# academic PDF is committed, at assets/cv.pdf.
+out/
+rendercv_output/
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/

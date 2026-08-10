@@ -1,0 +1,57 @@
+# First entry with `type: work` is the source of the CV header title/affiliation/address.
+# Keep it first and keep `address` accurate.
+
+- start: 2025
+  end: null                 # null = ongoing
+  type: work
+  position: Research Assistant Professor
+  institution: University of Nebraska-Lincoln
+  location: Batavia, IL
+  tags: [hep, leadership]
+
+- start: 2020
+  end: 2025
+  type: work
+  position: Research Associate
+  institution: Fermi National Accelerator Laboratory
+  location: Batavia, IL
+  tags: [hep, computing]
+
+- start: 2023
+  end: 2024
+  type: service
+  position: Distinguished Researcher
+  institution: LHC Physics Center (LPC), Fermilab
+  url: https://lpc.fnal.gov/fellows/2024/Martin_Kwok.shtml
+  tags: [hep, leadership]
+
+- start: 2023
+  end: null
+  type: service
+  position: Collaborator
+  institution: TAC-HEP
+  url: https://tac-hep.org/
+  tags: [computing, leadership]
+
+- start: 2020
+  end: 2024
+  type: service
+  position: Member, Portable Parallelization Strategies (PPS) team
+  institution: Center for Computational Excellence (CCE)
+  url: https://www.anl.gov/hep-cce
+  tags: [computing, gpu, portability]
+
+- start: 2019
+  end: 2020
+  type: service
+  position: Graduate Scholar
+  institution: LHC Physics Center (LPC), Fermilab
+  url: https://lpc.fnal.gov/programs/graduate-scholars/2019/Ka_Hei_Martin_Kwok.shtml
+  tags: [hep, leadership]
+
+- start: 2016
+  end: 2018
+  type: service
+  position: On-call DAQ expert and online software developer, CMS HCAL
+  institution: CMS Collaboration
+  tags: [detector, instrumentation, computing]

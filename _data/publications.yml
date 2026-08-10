@@ -1,0 +1,179 @@
+# HAND-CURATED. See CLAUDE.md — INSPIRE never generates or expands this list.
+# Lines marked VERIFY carry an inference from CV.tex that the author must confirm.
+#
+# `date` is the arXiv / first-public date, NOT the journal publication date. It exists to
+# sort the rendered output and is otherwise not displayed; `ref` carries the journal year.
+# Using the first-public date keeps ordering stable — a preprint that gets published during
+# proofs updates `ref` via `inspire.py check` without resorting the CV. Entries are kept in
+# descending `date` order within each domain block as a courtesy; the renderer sorts anyway.
+#
+# There is no `contribution` and no `role` field. Presence in this file IS the claim of
+# relevance — the list is curated, so everything here is selected. Expertise is evidenced
+# elsewhere on the CV (research highlights, talks, service), not annotated per paper.
+
+# ---------------------------------------------------------------- physics
+
+- date: 2026-06
+  authors: M. Abbott et al.
+  title: >-
+    High Multiplicity Trigger for long-lived particles in CMS detector
+  ref: JINST 21 (2026) P07040
+  arxiv: "2606.27165"
+  doi: 10.1088/1748-0221/21/07/P07040
+  inspire: 3173010
+  domain: physics
+  tags: [hep, llp, trigger, detector, instrumentation]
+
+- date: 2026-01
+  authors: CMS Collaboration
+  title: >-
+    Strategy and performance of the CMS long-lived particle trigger program in
+    proton-proton collisions at $\sqrt{s}=13.6$ TeV
+  ref: arXiv:2601.17544
+  arxiv: "2601.17544"
+  doi: null
+  inspire: 3111434
+  domain: physics
+  tags: [hep, llp, trigger, detector]
+
+- date: 2025-02
+  authors: C. Bell et al.
+  title: >-
+    MAIA: A new detector concept for a 10 TeV muon collider
+  ref: arXiv:2502.00181
+  arxiv: "2502.00181"
+  doi: null
+  domain: physics
+  tags: [hep, detector, instrumentation]
+
+- date: 2024-07
+  authors: CMS Collaboration
+  title: >-
+    Search for long-lived heavy neutral leptons decaying in the CMS muon
+    detectors in proton-proton collisions at $\sqrt{s}=13$ TeV
+  ref: Phys. Rev. D 110 (2024) 012004
+  arxiv: "2402.18658"                                        # VERIFY arXiv id
+  doi: 10.1103/PhysRevD.110.012004
+  domain: physics
+  tags: [hep, llp, hnl, trigger, detector]
+
+- date: 2024-05
+  authors: CMS Collaboration
+  title: >-
+    Review of searches for vector-like quarks, vector-like leptons, and heavy neutral
+    leptons in proton-proton collisions at $\sqrt{s}=13$ TeV at the CMS experiment
+  ref: Phys. Rept. 1115 (2025) 570
+  arxiv: "2405.17605"
+  doi: 10.1016/j.physrep.2024.09.012
+  domain: physics
+  tags: [hep, hnl, llp]
+
+- date: 2021-05
+  authors: G. Di Guglielmo et al.
+  title: >-
+    A reconfigurable neural network ASIC for detector front-end data compression
+    at the HL-LHC
+  ref: IEEE Trans. Nucl. Sci. 68 (2021) 2179
+  arxiv: "2105.01683"
+  doi: 10.1109/TNS.2021.3087100                              # VERIFY DOI
+  domain: physics
+  tags: [hep, ml, detector, instrumentation]
+
+- date: 2020-12
+  authors: CMS Collaboration
+  title: >-
+    Inclusive search for a highly boosted Higgs boson decaying to a bottom
+    quark-antiquark pair
+  ref: JHEP 12 (2020) 085
+  arxiv: "2006.13251"                                        # VERIFY arXiv id
+  doi: 10.1007/JHEP12(2020)085
+  domain: physics
+  tags: [hep, ml]
+
+- date: 2019-01
+  authors: CMS Collaboration
+  title: >-
+    Search for low-mass resonances decaying into bottom quark-antiquark pairs in
+    proton-proton collisions at $\sqrt{s}=13$ TeV
+  ref: Phys. Rev. D 99 (2019) 012005
+  arxiv: "1810.11822"                                        # VERIFY arXiv id
+  doi: 10.1103/PhysRevD.99.012005
+  domain: physics
+  tags: [hep]
+
+- date: 2018-11
+  authors: CMS Collaboration
+  title: >-
+    Search for black holes and sphalerons in high-multiplicity final states in
+    proton-proton collisions at $\sqrt{s}=13$ TeV
+  ref: JHEP 11 (2018) 042
+  arxiv: "1805.06013"                                        # VERIFY arXiv id
+  doi: 10.1007/JHEP11(2018)042
+  domain: physics
+  tags: [hep]
+
+- date: 2017-11
+  authors: CMS Collaboration
+  title: >-
+    Search for black holes and other new phenomena in high-multiplicity final states
+    in proton-proton collisions at $\sqrt{s}=13$ TeV
+  ref: Phys. Lett. B 774 (2017) 279
+  arxiv: "1705.01403"                                        # VERIFY arXiv id
+  doi: 10.1016/j.physletb.2017.09.053                        # VERIFY DOI
+  domain: physics
+  tags: [hep]
+
+# ---------------------------------------------------------------- computing
+
+- date: 2025-05
+  authors: M. Atif et al.
+  title: >-
+    Packaging HEP heterogeneous mini-apps for portable benchmarking and facility
+    evaluation on modern HPCs
+  ref: EPJ Web Conf. 337 (2025) 01188
+  arxiv: "2505.08933"
+  doi: 10.1051/epjconf/202533701188
+  inspire: 2921168
+  domain: computing
+  tags: [computing, gpu, portability]
+
+- date: 2024-09
+  authors: H. Ather et al.
+  title: >-
+    Exploring code portability solutions for HEP with a particle tracking test code
+  ref: Front. Big Data 7 (2024) 1485344
+  arxiv: "2409.09228"
+  doi: 10.3389/fdata.2024.1485344
+  domain: computing
+  tags: [computing, gpu, portability]
+
+- date: 2023-06
+  authors: M. Atif et al.
+  title: >-
+    Evaluating portable parallelization strategies for heterogeneous architectures
+    in high energy physics
+  ref: arXiv:2306.15869
+  arxiv: "2306.15869"
+  doi: null
+  domain: computing
+  tags: [computing, gpu, portability]
+
+- date: 2022-03
+  authors: M. Bhattacharya et al.
+  title: >-
+    Portability: a necessary approach for future scientific software
+  ref: arXiv:2203.09945 (Snowmass 2021 contribution)
+  arxiv: "2203.09945"
+  doi: null
+  domain: computing
+  tags: [computing, gpu, portability]
+
+- date: 2021-08
+  authors: M. Kortelainen et al.
+  title: >-
+    Performance of CUDA unified memory in CMS heterogeneous pixel reconstruction
+  ref: EPJ Web Conf. 251 (2021) 03035
+  arxiv: "2103.02207"                                        # VERIFY arXiv id
+  doi: 10.1051/epjconf/202125103035
+  domain: computing
+  tags: [computing, gpu]

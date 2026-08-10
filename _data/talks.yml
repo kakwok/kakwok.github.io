@@ -1,0 +1,120 @@
+# Same `domain` axis as publications.yml, plus `kind`.
+# kind: plenary | parallel | seminar | lecture
+
+- date: 2024-07
+  title: Searches for Heavy Neutral Leptons in CMS
+  event: ICHEP 2024
+  location: Prague, Czechia
+  url: https://indico.cern.ch/event/1291157/timetable/?view=standard#188-searches-for-heavy-neutral
+  domain: physics
+  kind: parallel
+  tags: [hep, hnl, llp]
+
+- date: 2024-07
+  title: "CMS: HNLs in the muon system"
+  event: LLP 2024
+  location: Tokyo, Japan
+  url: https://indico.cern.ch/event/1381368/timetable/?view=standard#59-cms-hnls-in-the-muon-system
+  domain: physics
+  kind: parallel
+  tags: [hep, hnl, llp, detector]
+
+- date: 2023-09
+  title: >-
+    Searching for Heavy Neutral Leptons with muon detectors in the CMS experiment
+  event: Seminar, Université catholique de Louvain
+  location: Louvain-la-Neuve, Belgium
+  url: https://agenda.irmp.ucl.ac.be/event/4999/
+  domain: physics
+  kind: seminar
+  tags: [hep, hnl, llp]
+
+- date: 2023-05
+  title: Non-resonant searches at the TeV scale
+  event: LHCP 2023
+  url: https://indico.cern.ch/event/1198609/contributions/5316842/
+  domain: physics
+  kind: plenary
+  tags: [hep]
+
+- date: 2022-11
+  title: >-
+    Triggering on hadronic showers produced in decays of long-lived particles in
+    CMS muon detectors
+  event: IEEE NSS MIC RTSD 2022 (poster)
+  url: https://nssmic.ieee.org/2022/information/#conference-poster
+  domain: physics
+  kind: parallel          # poster; `kind` vocabulary has no poster value — VERIFY
+  tags: [hep, llp, trigger, detector, instrumentation]
+
+- date: 2022-10
+  title: What's new for Run 3 for LLPs at CMS?
+  event: LLP 12
+  url: https://indico.cern.ch/event/1166678/timetable/?view=standard#38-whats-new-for-run-3-for-llp
+  domain: physics
+  kind: parallel
+  tags: [hep, llp, trigger]
+
+- date: 2020-07
+  title: >-
+    Search for boosted Higgs bosons decaying into bottom quark pairs in CMS
+  event: BOOST 2020
+  url: https://indico.cern.ch/event/775951/contributions/3946570/
+  domain: physics
+  kind: parallel
+  tags: [hep, ml]
+
+- date: 2019-08
+  title: VH(bb) and search for boosted ggH$\to b\bar{b}$ in CMS
+  event: QCD at LHC 2019
+  url: https://indico.fnal.gov/event/19380/timetable/?view=standard#121-vhbb-and-search-for-booste
+  domain: physics
+  kind: parallel
+  tags: [hep]
+
+- date: 2023-05
+  title: >-
+    Application of performance portability solutions for GPUs and many-core CPUs to
+    track reconstruction kernels
+  event: CHEP 2023
+  location: Norfolk, VA
+  url: https://indico.jlab.org/event/459/contributions/11844/
+  domain: computing
+  kind: parallel
+  tags: [computing, gpu, portability]
+
+- date: 2023-02
+  title: >-
+    Introduction to NVIDIA profiling tools: Nsight Systems and Nsight Compute
+  event: TAC-HEP GPU/FPGA training module
+  url: https://tac-hep.org/assets/pdf/uw-gpu-fpga/intro_CUDA_profiling-2.pdf
+  domain: computing
+  kind: lecture
+  tags: [computing, gpu, outreach]
+
+- date: 2022-10
+  title: >-
+    Application of portable parallelization strategies for GPUs on track
+    reconstruction kernels
+  event: ACAT 2022
+  url: https://indico.cern.ch/event/1106990/contributions/4991278/
+  domain: computing
+  kind: parallel
+  tags: [computing, gpu, portability]
+
+- date: 2021-08
+  title: Portable Parallelization Strategies — metrics
+  event: IRIS-HEP topical meeting
+  url: https://indico.cern.ch/event/1063482/#3-portable-parallelization-str
+  domain: computing
+  kind: parallel
+  tags: [computing, gpu, portability]
+
+- date: 2021-05
+  title: >-
+    Performance of CUDA unified memory in CMS heterogeneous pixel reconstruction
+  event: vCHEP 2021
+  url: https://indico.cern.ch/event/948465/contributions/4324112/
+  domain: computing
+  kind: parallel
+  tags: [computing, gpu]

@@ -1,0 +1,99 @@
+# `highlights` → CV bullets (terse). `narrative` → public website Research page (prose).
+# `narrative` is PUBLIC — written for a general physics audience.
+# Entries without `narrative` fall back to `highlights` on the site; that is by design,
+# so a theme is useful on the CV before the prose exists.
+
+- title: Long-lived particle searches with Muon Detector Showers
+  start: 2020
+  end: null
+  domain: physics
+  tags: [hep, llp, trigger, detector]
+  highlights:
+    - Coordinating multiple LLP search efforts using the novel MDS signature
+    - >-
+      Set world-best limits on low-mass, long-lived heavy neutral leptons using muon
+      detector showers; published in PRD
+  narrative: >
+    Long-lived particles that decay inside the CMS muon detectors deposit a dense
+    cluster of hits — a muon detector shower — rather than the isolated tracks
+    conventional reconstruction is built to find. Treating that shower as a signal in
+    its own right opens a region of parameter space the experiment was previously blind
+    to. Using this signature, CMS set the world's best limits on low-mass, long-lived
+    heavy neutral leptons.
+
+- title: New CMS triggers for long-lived particles using Muon Detector Showers
+  start: 2022
+  end: null
+  domain: physics
+  tags: [hep, llp, trigger, detector, instrumentation]
+  highlights:
+    - >-
+      Developed and commissioned dedicated hardware triggers on muon detector showers,
+      drastically improving CMS acceptance to LLP signatures for LHC Run 3
+  narrative: >
+    A signature is only usable if the trigger keeps it. Dedicated hardware triggers on
+    muon detector showers were developed and commissioned for LHC Run 3, so that events
+    containing a decay inside the muon system are recorded rather than discarded in the
+    first microseconds of the readout chain.
+
+- title: GPU portability for high energy physics reconstruction
+  start: 2021
+  end: null
+  domain: computing
+  tags: [computing, gpu, portability, ml]
+  highlights:
+    - >-
+      Migrated ~4k lines of CUDA for CMS HCAL energy reconstruction to the Alpaka
+      portability library
+    - >-
+      Designed and implemented a track-reconstruction benchmark mini-app (p2r) spanning
+      Kokkos, Alpaka and other portability technologies
+  narrative: >
+    HEP reconstruction code now has to run on GPUs from several vendors without being
+    rewritten for each. Working within the HEP-CCE Portable Parallelization Strategies
+    team, this line of work ports real CMS reconstruction — HCAL energy reconstruction,
+    pixel and track finding — onto portability layers such as Alpaka and Kokkos, and
+    benchmarks the result on NVIDIA, AMD and Intel hardware to measure what portability
+    actually costs in performance and in developer effort.
+
+- title: Boosted Higgs decaying into bottom quarks
+  start: 2019
+  end: 2020
+  domain: physics
+  tags: [hep, ml]
+  highlights:
+    - >-
+      Performed the inclusive search for Higgs decaying to bottom quarks using boosted
+      jet substructure and machine learning; published in JHEP
+
+- title: Fast machine learning on ASICs
+  start: 2019
+  end: 2020
+  domain: physics
+  tags: [hep, ml, detector, instrumentation]
+  highlights:
+    - >-
+      Designed a quantized autoencoder network to compress HGCAL front-end electronics
+      data, capable of ultra-low-latency on-detector inference
+
+- title: Searches for microscopic black holes and sphalerons
+  start: 2016
+  end: 2018
+  domain: physics
+  tags: [hep]
+  highlights:
+    - >-
+      Performed the first dedicated experimental search for electroweak sphalerons with
+      CMS data; published in JHEP
+
+- title: CMS HCAL online software and DAQ
+  start: 2016
+  end: 2018
+  domain: physics
+  tags: [detector, instrumentation, computing]
+  highlights:
+    - >-
+      Developed Run Control features allowing concurrent commissioning of HCAL detector
+      partitions during the phase-1 upgrade
+    - >-
+      Built monitoring tools for debugging HCAL phase-1 front-end communication issues
