@@ -1,0 +1,4 @@
+# Tooling for the CV pipeline. The Jekyll site needs none of this.
+PyYAML>=6.0
+jsonschema>=4.0      # validates _data/*.yml against schemas/*.schema.json
+certifi>=2024.2.2    # only needed on Python builds shipping no CA bundle (MacPorts, python.org)

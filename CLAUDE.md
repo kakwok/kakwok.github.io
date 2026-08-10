@@ -139,7 +139,8 @@ Do not reintroduce per-paper contribution or role annotations. Stating your own 
 a publication list is not convention in this field, and a curated ~15-entry list already
 excludes the hundreds of author-list-only CMS papers that the annotation existed to mark.
 
-`talks.yml` uses the same `domain` axis plus `kind: [plenary, parallel, seminar, lecture]`.
+`talks.yml` uses the same `domain` axis plus
+`kind: [plenary, parallel, poster, seminar, lecture]`.
 
 ### Rendered output
 
@@ -209,8 +210,11 @@ Combined with `add`, entering a new paper should take ~20 seconds.
 Every entry carries `tags`. Variants are filters over tags, never copies of content.
 
 Tag vocabulary (keep closed; add deliberately):
-`hep`, `computing`, `ml`, `llp`, `trigger`, `detector`, `instrumentation`, `gpu`,
+`hep`, `computing`, `ml`, `llp`, `hnl`, `trigger`, `detector`, `instrumentation`, `gpu`,
 `portability`, `leadership`, `outreach`, `carve`
+
+The vocabulary is enforced by `schemas/*.schema.json`. Adding a tag means editing the enum
+in both schemas — that friction is deliberate, it is what keeps the list closed.
 
 A variant is a section list with filters:
 

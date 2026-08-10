@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kakwok.github.io/schemas/publications.schema.json",
+  "title": "Hand-curated publication list",
+  "description": "Source of truth for the CV and site publication lists. INSPIRE never generates or expands this file — see CLAUDE.md. There is deliberately no `contribution` and no `role` field.",
+  "type": "array",
+  "items": { "$ref": "#/$defs/publication" },
+
+  "$defs": {
+    "publication": {
+      "type": "object",
+      "required": ["date", "authors", "title", "ref", "domain", "tags"],
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "description": "arXiv / first-public date as YYYY-MM. NOT the journal publication date — see the header comment in publications.yml. Sorts the rendered output; never displayed.",
+          "type": "string",
+          "pattern": "^[12][0-9]{3}-(0[1-9]|1[0-2])$"
+        },
+        "authors": {
+          "description": "'CMS Collaboration', or first author in 'M. Atif et al.' form.",
+          "type": "string",
+          "minLength": 3
+        },
+        "title": {
+          "type": "string",
+          "minLength": 10
+        },
+        "ref": {
+          "description": "Human-readable citation: 'Phys. Rev. D 110 (2024) 012004', or 'arXiv:2502.00181' while unpublished.",
+          "type": "string",
+          "minLength": 5
+        },
+        "arxiv": {
+          "description": "Bare arXiv id, quoted so 2402.18658 is not read as a float. Old-style ids (hep-ex/0123456) also allowed.",
+          "type": ["string", "null"],
+          "pattern": "^([0-9]{4}\\.[0-9]{4,5}(v[0-9]+)?|[a-z-]+(\\.[A-Z]{2})?/[0-9]{7})$"
+        },
+        "doi": {
+          "description": "BARE DOI — no https://doi.org/ prefix. The prefix is presentation, added by the renderer; inspire.py queries /api/doi/{doi} with this value.",
+          "type": ["string", "null"],
+          "pattern": "^10\\.[0-9]{4,9}/[^\\s]+$"
+        },
+        "inspire": {
+          "description": "INSPIRE control_number (recid). Optional; `inspire.py check --fix` backfills it.",
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "domain": {
+          "description": "Exactly two values, matching the CV's section split. Instrumentation work is domain: physics carrying an `instrumentation` tag — NOT a third domain.",
+          "enum": ["physics", "computing"]
+        },
+        "tags": {
+          "description": "Closed vocabulary. Variants are filters over these, never copies of content. Adding a value means editing both schemas — that friction is deliberate.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/tag" }
+        }
+      },
+
+      "allOf": [
+        {
+          "description": "An entry must be findable by machine: at least one of arxiv, doi or inspire must be present, or `check` can never verify it.",
+          "anyOf": [
+            { "properties": { "arxiv":   { "type": "string" } }, "required": ["arxiv"] },
+            { "properties": { "doi":     { "type": "string" } }, "required": ["doi"] },
+            { "properties": { "inspire": { "type": "integer" } }, "required": ["inspire"] }
+          ]
+        }
+      ]
+    },
+
+    "tag": {
+      "enum": [
+        "hep", "computing", "ml", "llp", "hnl", "trigger", "detector",
+        "instrumentation", "gpu", "portability", "leadership", "outreach", "carve"
+      ]
+    }
+  }
+}

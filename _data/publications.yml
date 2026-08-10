@@ -43,6 +43,7 @@
   ref: arXiv:2502.00181
   arxiv: "2502.00181"
   doi: null
+  inspire: 2874678
   domain: physics
   tags: [hep, detector, instrumentation]
 
@@ -54,6 +55,7 @@
   ref: Phys. Rev. D 110 (2024) 012004
   arxiv: "2402.18658"                                        # VERIFY arXiv id
   doi: 10.1103/PhysRevD.110.012004
+  inspire: 2763130
   domain: physics
   tags: [hep, llp, hnl, trigger, detector]
 
@@ -65,6 +67,7 @@
   ref: Phys. Rept. 1115 (2025) 570
   arxiv: "2405.17605"
   doi: 10.1016/j.physrep.2024.09.012
+  inspire: 2791037
   domain: physics
   tags: [hep, hnl, llp]
 
@@ -76,6 +79,7 @@
   ref: IEEE Trans. Nucl. Sci. 68 (2021) 2179
   arxiv: "2105.01683"
   doi: 10.1109/TNS.2021.3087100                              # VERIFY DOI
+  inspire: 1862125
   domain: physics
   tags: [hep, ml, detector, instrumentation]
 
@@ -87,6 +91,7 @@
   ref: JHEP 12 (2020) 085
   arxiv: "2006.13251"                                        # VERIFY arXiv id
   doi: 10.1007/JHEP12(2020)085
+  inspire: 1802817
   domain: physics
   tags: [hep, ml]
 
@@ -98,6 +103,7 @@
   ref: Phys. Rev. D 99 (2019) 012005
   arxiv: "1810.11822"                                        # VERIFY arXiv id
   doi: 10.1103/PhysRevD.99.012005
+  inspire: 1700756
   domain: physics
   tags: [hep]
 
@@ -109,6 +115,7 @@
   ref: JHEP 11 (2018) 042
   arxiv: "1805.06013"                                        # VERIFY arXiv id
   doi: 10.1007/JHEP11(2018)042
+  inspire: 1673362
   domain: physics
   tags: [hep]
 
@@ -120,6 +127,7 @@
   ref: Phys. Lett. B 774 (2017) 279
   arxiv: "1705.01403"                                        # VERIFY arXiv id
   doi: 10.1016/j.physletb.2017.09.053                        # VERIFY DOI
+  inspire: 1598036
   domain: physics
   tags: [hep]
 
@@ -144,6 +152,7 @@
   ref: Front. Big Data 7 (2024) 1485344
   arxiv: "2409.09228"
   doi: 10.3389/fdata.2024.1485344
+  inspire: 2828774
   domain: computing
   tags: [computing, gpu, portability]
 
@@ -155,6 +164,7 @@
   ref: arXiv:2306.15869
   arxiv: "2306.15869"
   doi: null
+  inspire: 2672556
   domain: computing
   tags: [computing, gpu, portability]
 
@@ -165,15 +175,17 @@
   ref: arXiv:2203.09945 (Snowmass 2021 contribution)
   arxiv: "2203.09945"
   doi: null
+  inspire: 2054702
   domain: computing
   tags: [computing, gpu, portability]
 
-- date: 2021-08
+- date: 2021-02
   authors: M. Kortelainen et al.
   title: >-
     Performance of CUDA unified memory in CMS heterogeneous pixel reconstruction
   ref: EPJ Web Conf. 251 (2021) 03035
-  arxiv: "2103.02207"                                        # VERIFY arXiv id
+  arxiv: null                                                # no arXiv eprint (vCHEP proceedings)
   doi: 10.1051/epjconf/202125103035
+  inspire: 1858527
   domain: computing
   tags: [computing, gpu]

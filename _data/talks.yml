@@ -1,5 +1,5 @@
 # Same `domain` axis as publications.yml, plus `kind`.
-# kind: plenary | parallel | seminar | lecture
+# kind: plenary | parallel | poster | seminar | lecture
 
 - date: 2024-07
   title: Searches for Heavy Neutral Leptons in CMS
@@ -41,10 +41,10 @@
   title: >-
     Triggering on hadronic showers produced in decays of long-lived particles in
     CMS muon detectors
-  event: IEEE NSS MIC RTSD 2022 (poster)
+  event: IEEE NSS MIC RTSD 2022
   url: https://nssmic.ieee.org/2022/information/#conference-poster
   domain: physics
-  kind: parallel          # poster; `kind` vocabulary has no poster value — VERIFY
+  kind: poster
   tags: [hep, llp, trigger, detector, instrumentation]
 
 - date: 2022-10
