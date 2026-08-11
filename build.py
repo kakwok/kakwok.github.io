@@ -124,8 +124,8 @@ def as_education(entry: dict) -> dict:
         highlights.append(f"Thesis: {detex(entry['thesis'])}")
     return {
         "institution": entry["institution"],
-        "area": entry["degree"],
-        "degree": "",
+        "area": entry.get("area", ""),
+        "degree": entry["degree"],
         "location": entry.get("location"),
         "highlights": highlights,
         **years(entry),
@@ -152,52 +152,63 @@ def as_research(entry: dict) -> dict:
     }
 
 
-def as_award(entry: dict) -> dict:
-    return {
-        "name": entry["title"],
-        "date": str(entry["date"]),
-        "summary": entry.get("institution"),
-    }
+# The four list-like sections render as one-line TextEntries rather than RenderCV's
+# structured entry types. A PublicationEntry puts title, authors, journal and date on
+# four separate lines and pads 1.2em between entries; with ~50 of them that alone cost
+# two pages. Text entries pack at 0.3em and read like the old LaTeX CV's tables.
+
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
-def as_teaching(entry: dict) -> dict:
-    summary = entry.get("institution") or ""
+def when(value) -> str:
+    """'2024-09' -> '2024 Sep'; a bare year stays a bare year."""
+    text = str(value)
+    match = re.match(r"^(\d{4})-(\d{2})$", text)
+    return f"{match.group(1)} {MONTHS[int(match.group(2)) - 1]}" if match else text
+
+
+def as_award(entry: dict) -> str:
+    tail = f", {entry['institution']}" if entry.get("institution") else ""
+    return f"**{when(entry['date'])}** — {entry['title']}{tail}"
+
+
+def as_teaching(entry: dict) -> str:
+    span = f"{entry['start']}" if entry.get("end") == entry.get("start") else (
+        f"{entry['start']}–{'now' if entry.get('end') is None else entry['end']}"
+    )
+    title = entry["title"]
+    if entry.get("url"):
+        title = f"[{title}]({entry['url']})"
+    parts = [title]
+    if entry.get("institution"):
+        parts.append(entry["institution"])
     if entry.get("note"):
-        summary = f"{summary}. {entry['note']}" if summary else entry["note"]
-    name = entry["title"]
+        parts.append(entry["note"])
+    return f"**{span}** — {', '.join(parts[:2])}" + (f". {parts[2]}" if len(parts) > 2 else "")
+
+
+def as_talk(entry: dict) -> str:
+    title = detex(entry["title"])
     if entry.get("url"):
-        name = f"[{name}]({entry['url']})"
-    return {"name": name, "summary": summary, **years(entry)}
+        title = f"[{title}]({entry['url']})"
+    tail = [entry["event"]]
+    kind = entry.get("kind")
+    # `parallel` is the unremarkable default and goes unsaid; and don't print
+    # "Seminar, UC Louvain (seminar)" when the event name already says it.
+    if kind in ("plenary", "poster", "seminar", "lecture") and kind not in tail[0].lower():
+        tail[0] = f"{tail[0]} ({kind})"
+    if entry.get("location"):
+        tail.append(entry["location"])
+    return f"**{when(entry['date'])}** — {title}, {', '.join(tail)}"
 
 
-def as_talk(entry: dict) -> dict:
-    """Talks carry no `end`, so they use `date`, and the event goes in the summary."""
-    name = detex(entry["title"])
-    if entry.get("url"):
-        name = f"[{name}]({entry['url']})"
-    event = entry["event"]
-    if entry.get("kind") in ("plenary", "poster", "seminar", "lecture"):
-        event = f"{event} ({entry['kind']})"
-    return {
-        "name": name,
-        "date": str(entry["date"]),
-        "location": entry.get("location"),
-        "summary": event,
-    }
-
-
-def as_publication(entry: dict) -> dict:
-    url = None
-    if entry.get("arxiv"):
-        url = f"https://arxiv.org/abs/{entry['arxiv']}"
-    return {
-        "title": detex(entry["title"]),
-        "authors": [entry["authors"]],
-        "journal": entry["ref"],
-        "doi": entry.get("doi"),
-        "url": None if entry.get("doi") else url,
-        "date": str(entry["date"]),
-    }
+def as_publication(entry: dict) -> str:
+    ref = entry["ref"]
+    if entry.get("doi"):
+        ref = f"[{ref}](https://doi.org/{entry['doi']})"
+    elif entry.get("arxiv"):
+        ref = f"[{ref}](https://arxiv.org/abs/{entry['arxiv']})"
+    return f"**{when(entry['date'])}** — {entry['authors']}, {detex(entry['title'])}, {ref}"
 
 
 BUILDERS = {
@@ -249,20 +260,37 @@ def header(basics: dict, experience: list[dict]) -> dict:
     if links.get("website"):
         contact["website"] = links["website"]
 
+    # ORCID and Google Scholar are built-in network types, so they get proper icons and
+    # correct URL construction for free. Only INSPIRE has no built-in support.
     networks = []
-    for network, value in (("GitHub", links.get("github")), ("LinkedIn", links.get("linkedin"))):
-        if value and value != "TODO":
-            networks.append({"network": network, "username": str(value).rstrip("/").split("/")[-1]})
+    for network, value in (
+        ("GitHub", links.get("github")),
+        ("LinkedIn", links.get("linkedin")),
+        ("ORCID", links.get("orcid")),
+        ("Google Scholar", links.get("scholar")),
+    ):
+        if not value or value == "TODO":
+            continue
+        if network == "Google Scholar":
+            match = re.search(r"user=([^&]+)", str(value))
+            if not match:
+                continue
+            username = match.group(1)
+        else:
+            username = str(value).rstrip("/").split("/")[-1]
+        networks.append({"network": network, "username": username})
     if networks:
         contact["social_networks"] = networks
 
-    # ORCID and INSPIRE have no `social_networks` type; they ride along as plain links.
-    extras = []
-    if links.get("orcid") and links["orcid"] != "TODO":
-        extras.append(f"[ORCID]({links['orcid']})")
+    # INSPIRE has no built-in network type. Icon names are bare FontAwesome ids —
+    # "book", not "fa-solid fa-book", which renders as literal text.
     if links.get("inspire_author") and links["inspire_author"] != "TODO":
-        extras.append(f"[INSPIRE]({links['inspire_author']})")
-    return contact, extras
+        contact["custom_connections"] = [{
+            "fontawesome_icon": "book",
+            "placeholder": "INSPIRE",
+            "url": links["inspire_author"],
+        }]
+    return contact
 
 
 # ------------------------------------------------------------------------ build
@@ -276,7 +304,7 @@ def build(variant_name: str, render: bool) -> Path:
 
     sources = {name: load(name) for name in BUILDERS}
     basics = load("basics")
-    contact, extras = header(basics, sources["experience"])
+    contact = header(basics, sources["experience"])
 
     sections: dict[str, list] = {}
     for section in spec["sections"]:
@@ -295,9 +323,6 @@ def build(variant_name: str, render: bool) -> Path:
         chosen = select(sources[source], section)
         if chosen:
             sections[title] = [BUILDERS[source](entry) for entry in chosen]
-
-    if extras:
-        sections["Identifiers"] = [" · ".join(extras)]
 
     document = {
         "cv": {**contact, "sections": sections},

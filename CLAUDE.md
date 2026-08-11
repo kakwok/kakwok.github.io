@@ -235,12 +235,24 @@ requires editing `_data/`, the abstraction is wrong — fix the filter layer ins
 
 ## Rendering
 
-**RenderCV** (YAML → Typst → PDF, plus HTML output; ships a JSON Schema). The tag-filter
-layer sits upstream:
+**RenderCV** (YAML → Typst → PDF, plus HTML output; ships a JSON Schema). Needs Python
+≥ 3.12 — the default `python3` here is MacPorts 3.8, so build the venv against
+`/usr/local/bin/python3.13`. The tag-filter layer sits upstream:
 
     _data/*.yml →  build.py (filter by variant)  →  rendercv YAML  →  rendercv render
 
 The HTML output feeds the website's `/cv/` page, so PDF and web CV never diverge.
+
+Two things `build.py` does that are easy to undo by accident:
+
+- **`detex()`** converts the LaTeX in `_data/` to Unicode on the PDF path only (`√s = 13
+  TeV`). Typst does not read LaTeX math. The source keeps LaTeX because Jekyll renders it
+  with KaTeX — do not "clean up" `_data/` by pre-converting it.
+- **Publications, talks, awards and teaching render as one-line text entries**, not
+  RenderCV's structured entry types. A `PublicationEntry` spreads title, authors, journal
+  and date over four lines at 1.2em spacing; with ~50 of them that alone cost two pages.
+  Text entries pack at 0.25em and read like the old LaTeX CV. This is why the CV fits in
+  three pages instead of five.
 
 Fallback if RenderCV's layout proves too constraining: Jinja2 → `moderncv`/`altacv` →
 `latexmk`. Do not switch without a concrete blocker.

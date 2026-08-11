@@ -11,6 +11,31 @@
 theme: classic
 max_pages: 3
 
+# Compact by design. An academic CV is a reference document, not a brochure — the
+# reader is scanning for a paper or a date, so density helps them. Publications, talks,
+# awards and teaching render as one-line entries (see build.py).
+design:
+  page:
+    top_margin: 0.6in
+    bottom_margin: 0.6in
+    left_margin: 0.65in
+    right_margin: 0.65in
+  typography:
+    line_spacing: 0.5em
+    font_size:
+      body: 9.5pt
+      name: 20pt
+      section_titles: 1.15em
+  section_titles:
+    space_above: 0.35cm
+    space_below: 0.15cm
+  sections:
+    space_between_regular_entries: 0.6em
+    space_between_text_based_entries: 0.25em
+  links:
+    underline: false
+    show_external_link_icon: false
+
 sections:
   - title: Work Experience
     from: experience

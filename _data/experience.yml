@@ -1,5 +1,9 @@
 # First entry with `type: work` is the source of the CV header title/affiliation/address.
-# Keep it first and keep `address` accurate.
+# Keep it first and keep `location` accurate.
+#
+# DELIBERATE: the UNL entry says Batavia, IL. The appointment is with Nebraska, but the
+# author is resident at Fermilab, so that is the correct location for the CV header. It
+# is not a leftover from the Fermilab entry below — do not "fix" it.
 
 - start: 2025
   end: null                 # null = ongoing
