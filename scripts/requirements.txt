@@ -1,4 +1,10 @@
 # Tooling for the CV pipeline. The Jekyll site needs none of this.
+#
+# Requires Python >= 3.12 (RenderCV 2.8). The MacPorts python3 on this machine is 3.8;
+# build the venv against /usr/local/bin/python3.13:
+#     python3.13 -m venv .venv && .venv/bin/pip install -r scripts/requirements.txt
+
 PyYAML>=6.0
 jsonschema>=4.0      # validates _data/*.yml against schemas/*.schema.json
 certifi>=2024.2.2    # only needed on Python builds shipping no CA bundle (MacPorts, python.org)
+rendercv[full]>=2.8  # YAML -> Typst -> PDF, used by build.py

@@ -1,6 +1,15 @@
 # Same `domain` axis as publications.yml, plus `kind`.
 # kind: plenary | parallel | poster | seminar | lecture
 
+- date: 2024-09
+  title: Review of recent searches for Heavy Neutral Leptons in CMS
+  event: NuFact 2024
+  location: Argonne National Laboratory, IL
+  url: https://indico.fnal.gov/event/63406/contributions/297826/
+  domain: physics
+  kind: parallel          # WG4: Muon Physics
+  tags: [hep, hnl, llp]
+
 - date: 2024-07
   title: Searches for Heavy Neutral Leptons in CMS
   event: ICHEP 2024

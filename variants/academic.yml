@@ -1,0 +1,59 @@
+# THE PUBLISHED VARIANT — rendered to assets/cv.pdf. See CLAUDE.md privacy #3.
+#
+# A variant is a section list with filters. It never contains CV content: if you find
+# yourself wanting to edit text here, the text belongs in _data/ and the filter layer
+# needs fixing instead.
+#
+# Filters, all optional and ANDed together:
+#   type_any / domain_any / kind_any / tags_any   keep entries matching any listed value
+#   limit                                          keep the first N after sorting
+
+theme: classic
+max_pages: 3
+
+sections:
+  - title: Work Experience
+    from: experience
+    type_any: [work]
+
+  - title: Education
+    from: education
+
+  - title: Professional Experience
+    from: experience
+    type_any: [service]
+
+  - title: Research Highlights — Physics
+    from: research
+    domain_any: [physics]
+
+  - title: Research Highlights — Computing
+    from: research
+    domain_any: [computing]
+
+  - title: Awards
+    from: awards
+
+  - title: Teaching and Outreach
+    from: teaching
+
+  - title: Selected Talks — Physics
+    from: talks
+    domain_any: [physics]
+    limit: 8
+
+  - title: Selected Publications — Physics
+    from: publications
+    domain_any: [physics]
+
+  - title: Selected Talks — Computing
+    from: talks
+    domain_any: [computing]
+    limit: 5
+
+  - title: Selected Publications — Computing
+    from: publications
+    domain_any: [computing]
+
+  - title: Full Publication List
+    from: publication_count
