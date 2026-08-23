@@ -24,6 +24,7 @@
     Teaching CMS a new trick: novel signature for Long-Lived Particle searches
   event: Northwestern University
   location: Evanston, IL
+  url: https://planitpurple.northwestern.edu/event/628234 
   domain: physics
   kind: seminar
   tags: [hep, llp, detector]
@@ -33,6 +34,7 @@
     Teaching CMS a new trick: novel signature for Long-Lived Particle searches
   event: Fermilab Wine and Cheese Seminar
   location: Batavia, IL
+  url: https://indico.fnal.gov/event/68002/
   domain: physics
   kind: seminar
   tags: [hep, llp, detector]

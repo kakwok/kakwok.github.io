@@ -1,6 +1,9 @@
+# `institution` is the affiliation the author held WHEN the award was received —
+# not the body that conferred it. Do not "correct" it to the awarding organisation.
+
 - date: 2025
   title: Breakthrough Prize in Fundamental Physics
-  institution: awarded to the ATLAS, CMS, ALICE and LHCb collaborations
+  institution: CMS collaborations
   tags: [hep]
 
 - date: 2020
