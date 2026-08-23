@@ -1,6 +1,42 @@
 # Same `domain` axis as publications.yml, plus `kind`.
 # kind: plenary | parallel | poster | seminar | lecture
 
+- date: 2026-02
+  title: >-
+    Teaching CMS a new trick: novel signature for Long-Lived Particle searches
+  event: University of Nebraska-Lincoln
+  location: Lincoln, NE
+  domain: physics
+  kind: seminar
+  tags: [hep, llp, detector]
+
+- date: 2025-10
+  title: >-
+    Teaching CMS a new trick: novel signature for Long-Lived Particle searches
+  event: University at Buffalo
+  location: Buffalo, NY
+  domain: physics
+  kind: seminar
+  tags: [hep, llp, detector]
+
+- date: 2025-04
+  title: >-
+    Teaching CMS a new trick: novel signature for Long-Lived Particle searches
+  event: Northwestern University
+  location: Evanston, IL
+  domain: physics
+  kind: seminar
+  tags: [hep, llp, detector]
+
+- date: 2025-03
+  title: >-
+    Teaching CMS a new trick: novel signature for Long-Lived Particle searches
+  event: Fermilab Wine and Cheese Seminar
+  location: Batavia, IL
+  domain: physics
+  kind: seminar
+  tags: [hep, llp, detector]
+
 - date: 2024-09
   title: Review of recent searches for Heavy Neutral Leptons in CMS
   event: NuFact 2024

@@ -62,18 +62,24 @@ sections:
   - title: Teaching and Outreach
     from: teaching
 
-  - title: Selected Talks — Physics
+  - title: Invited Seminars and Lectures
+    from: talks
+    kind_any: [seminar, lecture]
+
+  - title: Selected Conference Talks — Physics
     from: talks
     domain_any: [physics]
+    kind_any: [plenary, parallel, poster]
     limit: 8
 
   - title: Selected Publications — Physics
     from: publications
     domain_any: [physics]
 
-  - title: Selected Talks — Computing
+  - title: Selected Conference Talks — Computing
     from: talks
     domain_any: [computing]
+    kind_any: [plenary, parallel, poster]
     limit: 5
 
   - title: Selected Publications — Computing
