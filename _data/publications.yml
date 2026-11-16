@@ -24,20 +24,20 @@
   domain: physics
   tags: [hep, llp, trigger, detector, instrumentation]
 
-- date: 2026-01
+- date: 2026-09
   authors: CMS Collaboration
   title: >-
     Strategy and performance of the CMS long-lived particle trigger program in
     proton-proton collisions at $\sqrt{s}=13.6$ TeV
-  ref: arXiv:2601.17544
+  ref: Phys. Rept. 1205 (2027) 1
   arxiv: "2601.17544"
-  doi: null
+  doi: 10.1016/j.physrep.2026.07.007
   inspire: 3111434
   domain: physics
   tags: [hep, llp, trigger, detector]
 
 - date: 2025-02
-  authors: C. Bell et al.
+  authors: MAIA Collaboration
   title: >-
     MAIA: A new detector concept for a 10 TeV muon collider
   ref: arXiv:2502.00181
@@ -86,10 +86,10 @@
 - date: 2020-12
   authors: CMS Collaboration
   title: >-
-    Inclusive search for a highly boosted Higgs boson decaying to a bottom
-    quark-antiquark pair
+    Inclusive search for highly boosted Higgs bosons decaying to bottom
+    quark-antiquark pairs in proton-proton collisions at $\sqrt{s}=13$ TeV
   ref: JHEP 12 (2020) 085
-  arxiv: "2006.13251"                                        # VERIFY arXiv id
+  arxiv: "2006.13251"
   doi: 10.1007/JHEP12(2020)085
   inspire: 1802817
   domain: physics

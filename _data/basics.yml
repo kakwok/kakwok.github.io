@@ -6,7 +6,7 @@ name: Martin K. H. Kwok
 # Fermilab" here and drifted out of sync with Work Experience. Do not reintroduce those
 # keys — build.py reads experience.yml[0].{position, institution, location, address}.
 
-email: kkwok@fnal.gov            # VERIFY: current UNL work address. kkwok@fnal.gov is stale.
+email: kkwok@fnal.gov            # Deliberate: the Fermilab address is the primary contact (author is resident at Fermilab).
 phone: null            # PRIVATE. Leave null unless a variant needs it; never publish.
 
 links:

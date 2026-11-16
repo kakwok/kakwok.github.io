@@ -20,6 +20,9 @@
     its own right opens a region of parameter space the experiment was previously blind
     to. Using this signature, CMS set the world's best limits on low-mass, long-lived
     heavy neutral leptons.
+  figure: assets/img/research/cms-event-display.png
+  figure_alt: CMS event display of a proton-proton collision recorded in 2022, with tracks in the inner detector and clusters of hits in the muon endcaps.
+  figure_caption: CMS event display, run 360019, event 930593168 (2022 data).
 
 - title: New CMS triggers for long-lived particles using Muon Detector Showers
   start: 2022

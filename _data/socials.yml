@@ -1,0 +1,9 @@
+# Social/identity links, shown on the home page and in the search box.
+# Plugin docs: https://github.com/george-gca/jekyll-socials
+# Identity values mirror _data/basics.yml — keep the two in step.
+cv_pdf: /assets/cv.pdf # the committed academic CV (built by build.py / CI)
+email: kkwok@fnal.gov # Fermilab address — deliberately the primary contact
+github_username: kakwok
+inspirehep_id: 1380817
+orcid_id: 0000-0002-8693-6146
+scholar_userid: jxoBDAIAAAAJ

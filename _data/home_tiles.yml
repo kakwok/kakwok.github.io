@@ -1,0 +1,11 @@
+# Tiles on the landing page. Order = display order.
+- title: Research
+  description: Long-lived particle searches, triggers, and GPU-portable reconstruction.
+  url: /research/
+  img: assets/img/research/cms-event-display.png
+  img_alt: CMS event display of a proton-proton collision recorded in 2022.
+- title: Projects
+  description: Claude Code mods and Claudoperation.
+  url: /projects/
+  img: assets/img/projects/problem-after.svg
+  img_alt: Claudoperation diagram, showing session records drafted from each chat and approved by their author.

@@ -40,3 +40,11 @@ venv/
 .DS_Store
 .vscode/
 .idea/
+
+# al-folio / Jekyll
+.bundle/
+vendor/
+node_modules/
+assets/libs/
+al-folio-upgrade-report.md
+.ruby-version

@@ -1,6 +1,18 @@
 # Same `domain` axis as publications.yml, plus `kind`.
 # kind: plenary | parallel | poster | seminar | lecture
 
+# TODO: add the ACAT 2024 computing poster (domain: computing, kind: poster,
+# tags: [computing, gpu, portability]). Needs exact title, date/place, and Indico URL.
+
+- date: 2026-10
+  title: >-
+    Teaching CMS a new trick: novel signature for Long-Lived Particle searches
+  event: University of Florida
+  location: Gainesville, FL
+  domain: physics
+  kind: seminar
+  tags: [hep, llp, detector]
+
 - date: 2026-02
   title: >-
     Teaching CMS a new trick: novel signature for Long-Lived Particle searches

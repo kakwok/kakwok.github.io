@@ -279,8 +279,9 @@ the pipeline exists.
 
 - ~~INSPIRE **author recid**~~ — confirmed: `1380817` (ORCID on the profile matches).
 - ~~INSPIRE **BAI**~~ — confirmed: `Ka.Hei.Martin.Kwok.1`. Used by `stats`.
-- Current **UNL mailing address** and **UNL work email** for the CV header — still unknown.
-  `basics.yml` carries `kkwok@fnal.gov`, which is stale.
+- Contact email is `kkwok@fnal.gov` **on purpose** — the author kept the Fermilab address and it is
+  the primary contact. It is not stale; do not "fix" it. (Same logic as the Batavia location on the
+  UNL entry in `experience.yml`.)
 
 ---
 

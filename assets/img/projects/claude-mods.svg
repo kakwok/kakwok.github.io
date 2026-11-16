@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Two Claude Code mods: a band above the prompt showing context usage, and a side pane with Activity, Agents and Context tabs.">
+  <rect width="800" height="450" fill="#1e1e2e"/>
+  <rect x="24" y="24" width="520" height="402" rx="10" fill="#181825" stroke="#45475a"/>
+  <text x="44" y="60" font-family="ui-monospace,Menlo,monospace" font-size="15" fill="#a6adc8">&gt; refactor the trigger menu</text>
+  <text x="44" y="88" font-family="ui-monospace,Menlo,monospace" font-size="15" fill="#6c7086">Reading 14 files…</text>
+  <rect x="44" y="330" width="480" height="64" rx="8" fill="none" stroke="#d97757" stroke-width="2"/>
+  <text x="58" y="354" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#cdd6f4">context  ████████░░░░░░░░  48%</text>
+  <text x="58" y="378" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#a6adc8">5h 31%  ·  week 12%  ·  <tspan fill="#fab387">▲ +2k last turn</tspan></text>
+  <text x="44" y="318" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#6c7086">context-bar</text>
+  <rect x="560" y="24" width="216" height="402" rx="10" fill="#181825" stroke="#45475a"/>
+  <text x="576" y="54" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#89b4fa">1 Activity</text>
+  <text x="656" y="54" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#6c7086">2 Agents</text>
+  <text x="726" y="54" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#6c7086">3 Ctx</text>
+  <line x1="560" y1="66" x2="776" y2="66" stroke="#45475a"/>
+  <text x="576" y="92" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#a6e3a1">● trigger_menu.py</text>
+  <text x="576" y="114" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#cdd6f4">  config.yml</text>
+  <text x="576" y="136" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#cdd6f4">  README.md</text>
+  <text x="576" y="170" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#a6e3a1">✓ pytest</text>
+  <text x="576" y="192" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#f38ba8">✗ lint</text>
+  <text x="576" y="410" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#6c7086">lens</text>
+</svg>
